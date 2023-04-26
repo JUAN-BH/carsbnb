@@ -1,0 +1,101 @@
+.carBg {
+  background-image: url(https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/06/accordian_car.png);
+  background-position: 0px 90%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.FAQ {
+  padding: 45px 20px;
+  &__intro {
+    h2 {
+      font-size: $subTitle;
+      font-weight: 600;
+    }
+    h1 {
+      margin: 10px 0 30px 0;
+      line-height: 40px;
+      font-size: $promotionTitleRes;
+    }
+    p {
+      color: $normalTxtColor;
+    }
+  }
+  &__content {
+    margin-top: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.05);
+    background-color: $whiteBg;
+    overflow: hidden;
+
+    .questionCon {
+      .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        p {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        svg {
+          transition: all 0.2s ease-in-out;
+        }
+      }
+
+      .questionActive {
+        color: white;
+        box-shadow: 0 2px 8px 0 $primaryColor;
+        background-color: $primaryColor;
+        svg {
+          transform: rotateX(180deg);
+        }
+      }
+
+      .answ {
+        height: 0px;
+        padding: 0px 10px;
+        text-align: start;
+        font-size: 1.4rem;
+        transition: all 0.4s;
+      }
+      .answActive {
+        height: auto;
+        color: $normalTxtColor;
+        padding: 20px 10px;
+        transition: all 0.4s;
+      }
+    }
+  }
+}
+
+@include media-up(lg) {
+  .carBg {
+    background-position: 0px 70%;
+  }
+  .FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    padding: 80px 20px;
+    &__intro {
+      h1 {
+        margin: 30px 0px;
+        font-size: $sectionsTitle;
+      }
+    }
+
+    &__content {
+      width: 90%;
+      .questionCon {
+        .question {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

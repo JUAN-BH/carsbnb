@@ -1,0 +1,29 @@
+.primaryBtn {
+  position: relative;
+  background-color: $primaryColor;
+  box-shadow: 0 2px 8px 0 $primaryColor;
+}
+
+.primaryBtn:hover {
+  box-shadow: 0 2px 15px 0 $primaryColor;
+}
+
+// .primaryBtn:before {
+//   overflow: hidden;
+//   position: absolute;
+//   top: 0;
+//   right: -20px;
+//   z-index: 0;
+//   content: '';
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 4px;
+
+//   transition: transform 0.4s ease-in-out;
+//   background: linear-gradient(to left, white 1%, transparent 100%);
+// }
+
+// .primaryBtn:hover:before {
+//   z-index: 0;
+//   transform: translateX(-165px);
+// }

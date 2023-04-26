@@ -1,0 +1,74 @@
+.appBg {
+  background-color: #f9f9f9;
+  background-image: url(https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/08/download-background-image.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ourApp {
+  padding: 70px 20px;
+  &__con {
+    &__intro {
+      h1 {
+        font-size: $promotionTitleRes;
+        line-height: 40px;
+      }
+      p {
+        margin: 30px 0px;
+        color: $normalTxtColor;
+      }
+    }
+
+    &__appsBtn {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-top: 50px;
+      &__appBtn {
+        width: 150px;
+        cursor: pointer;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include media-up(xs) {
+  .ourApp {
+    &__con {
+      width: 70%;
+    }
+  }
+}
+
+@include media-up(lg) {
+  .ourApp {
+    padding: 50px 20px;
+
+    &__con {
+      width: 50%;
+      padding: 40px 0px;
+      &__intro {
+        h1 {
+          font-size: $sectionsTitle;
+          line-height: 60px;
+        }
+      }
+
+      &__appsBtn {
+        display: flex;
+        justify-content: flex-start;
+
+        &__appBtn:first-child {
+          margin-right: 20px;
+        }
+        &__appBtn {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.promtion {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 80px 0;
+  padding: 60px 10px;
+  text-align: center;
+  color: white;
+
+  background-image: url(https://demo.xpeedstudio.com/carrental/home-v4/wp-content/uploads/sites/5/2020/06/cta_car_action.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  background-color: $promotionBg;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__info {
+      h1 {
+        font-size: $promotionTitleRes;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 2.4rem;
+        span {
+          color: $primaryColor;
+        }
+      }
+    }
+    &__btn {
+      padding-top: 40px;
+    }
+  }
+}
+
+@include media-up(lg) {
+  .promtion {
+    background-position: top right;
+    background-size: auto;
+    padding: 80px 0;
+
+    &__content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &__info {
+        width: 50%;
+        text-align: left;
+        h1 {
+          font-size: $heroTitle;
+        }
+      }
+      &__btn {
+        padding-top: 0px;
+      }
+    }
+  }
+}

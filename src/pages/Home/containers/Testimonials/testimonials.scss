@@ -1,0 +1,183 @@
+.testimonials {
+  padding: 80px 20px;
+  &__info {
+    h2 {
+      font-size: $subTitle;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: $promotionTitleRes;
+      line-height: 40px;
+      margin: 10px 0 20px 0;
+    }
+    p {
+      color: $normalTxtColor;
+    }
+  }
+
+  &__gallery {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+    box-shadow: inset 0px -20px 20px 0px rgba(0, 0, 0, 0.05);
+    margin: 50px 0;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      padding: 30px 20px;
+      background-color: $whiteBg;
+      .testimonial {
+        margin: 20px 0px;
+        font-size: $normalText;
+        font-weight: 600;
+      }
+
+      &__data {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img {
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        div {
+          h2 {
+            font-size: $normalText;
+            font-weight: 500;
+          }
+          p {
+            font-size: $normalText;
+            font-weight: 400;
+          }
+        }
+        .tabler-icon-quote {
+          // width: 50px;
+          // height: 50px;
+          color: $primaryColor;
+          fill: $primaryColor;
+        }
+      }
+    }
+
+    .dotsTest {
+      bottom: -40px;
+      align-items: center;
+      justify-content: center;
+      .react-multi-carousel-dot {
+        width: 20px;
+        height: 20px;
+        margin: 0 4px;
+        overflow: hidden;
+        border-radius: 50%;
+
+        button {
+          width: 50%;
+          height: 50%;
+          border: none;
+          border-radius: 50%;
+          background-color: gray;
+        }
+      }
+      .react-multi-carousel-dot--active {
+        margin-bottom: 4px;
+        button {
+          width: 80%;
+          height: 80%;
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+}
+
+@include media-up(xs) {
+  .testimonials {
+    &__gallery {
+      &__item {
+        width: 96%;
+        margin: 0 10px;
+        .testimonial {
+          margin: 20px 0px;
+          font-size: $normalText;
+          font-weight: 600;
+        }
+
+        &__data {
+          justify-content: start;
+          gap: 10px;
+
+          div {
+            h2 {
+              font-size: $normalText;
+              font-weight: 500;
+            }
+            p {
+              font-size: $normalText;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-up(lg) {
+  .testimonials {
+    &__info {
+      text-align: center;
+      h2 {
+        font-size: $subTitle;
+        font-weight: 600;
+      }
+      h1 {
+        font-size: $sectionsTitle;
+        line-height: 40px;
+        margin: 10px 0 20px 0;
+      }
+      p {
+        color: $normalTxtColor;
+      }
+    }
+  }
+}
+
+@include media-up(xl) {
+  .testimonials {
+    &__gallery {
+      padding: 10px 6px;
+      &__item {
+        padding: 40px 30px;
+        .testimonial {
+          margin: 20px 0px;
+          font-size: $testimonialText;
+        }
+
+        &__data {
+          justify-content: start;
+          gap: 10px;
+
+          div {
+            h2 {
+              font-size: $nameText;
+            }
+            p {
+              font-size: $areaText;
+            }
+          }
+
+          .tabler-icon-quote {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

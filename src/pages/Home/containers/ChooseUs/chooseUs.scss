@@ -1,0 +1,119 @@
+.containerBg {
+  background-image: url(https://demo.xpeedstudio.com/carrental/onepage-v4/wp-content/uploads/sites/9/2020/08/road_image.png);
+  background-position: -200px 335px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $whiteBg;
+}
+.chooseUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  &__introImg {
+    width: 100%;
+  }
+  &__content {
+    &__info {
+      margin-top: 50px;
+      h2 {
+        margin-bottom: 10px;
+        font-size: $subTitle;
+        font-weight: 600;
+      }
+      h1 {
+        font-size: $promotionTitleRes;
+        line-height: 40px;
+      }
+      p {
+        margin: 30px 0;
+        color: $normalTxtColor;
+      }
+    }
+
+    &__infoItems {
+      margin-top: 30px;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+        text-align: center;
+
+        h2 {
+          font-size: 2.4rem;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include media-up(xs) {
+  .chooseUs {
+    &__content {
+      &__infoItems {
+        &__item {
+          flex-direction: row;
+          align-items: center;
+          text-align: start;
+
+          div {
+            margin-left: 20px;
+            h2 {
+              font-size: $bookTitle;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-up(lg) {
+  .chooseUs {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      &__info {
+        width: 50%;
+        margin-top: 50px;
+        h2 {
+          margin-bottom: 10px;
+          font-size: $subTitle;
+          font-weight: 600;
+        }
+        h1 {
+          font-size: $sectionsTitle;
+          line-height: 50px;
+        }
+        p {
+          margin: 30px 0;
+          color: $normalTxtColor;
+        }
+      }
+
+      &__infoItems {
+        width: 50%;
+        margin-top: 30px;
+        &__item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 40px;
+          text-align: start;
+
+          div {
+            margin-left: 20px;
+            h2 {
+              font-size: $bookTitle;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

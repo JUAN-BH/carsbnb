@@ -1,0 +1,9 @@
+.learnMoreBtn {
+  background-color: $learnMoreBtn;
+  width: 160px;
+}
+.learnMoreBtn:hover {
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  background-color: $whiteBg;
+}

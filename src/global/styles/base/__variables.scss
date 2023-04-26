@@ -1,0 +1,35 @@
+$primaryColor: #ff4c30;
+$normalTxtColor: #817f91;
+$softWhiteBg: #f8f8f8;
+$whiteBg: #ffff;
+$promotionBg: #2d2d2d;
+$learnMoreBtn: #161616;
+
+$heroTitle: 5.2rem;
+$sectionsTitle: 4.4rem;
+$footerTitle: 2.4rem;
+$promotionTitleRes: 3.5rem;
+$navTitle: 2.6rem;
+$bookTitle: 2.6rem;
+$labelTitle: 1.6rem;
+$subTitle: 2.2rem;
+$navText: 1.5rem;
+$normalText: 1.6rem;
+$footerRText: 1.4rem;
+$testimonialText: 2.4rem;
+$nameText: 1.8rem;
+$areaText: 1.6rem;
+$btnText: 1.6rem;
+
+$breakPoints: (
+  xs: 584px,
+  lg: 825px,
+  xl: 1025px,
+  xxl: 1320px,
+);
+
+@mixin media-up($breakPoint) {
+  @media screen and (min-width: map-get($breakPoints, $breakPoint)) {
+    @content;
+  }
+}

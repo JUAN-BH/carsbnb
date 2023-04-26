@@ -1,0 +1,101 @@
+.bookCarIntro {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 4px;
+  background-image: url('/src/assets/imgs/bookBg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+
+  &__title {
+    font-size: $bookTitle;
+    margin: 10px 0;
+  }
+
+  &__form {
+    display: grid;
+    width: 100%;
+
+    &__inputCon {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 10px auto;
+      font-weight: bold;
+      transition: all 0.3s;
+
+      p {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          color: $primaryColor;
+        }
+      }
+      input {
+        margin-top: 10px;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f3f3f3;
+      }
+      input:focus {
+        outline: none;
+        border: none;
+      }
+    }
+    .btnForm {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+}
+
+@include media-up(lg) {
+  .bookCarIntro {
+    padding: 30px;
+
+    &__form {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      &__inputCon:first-child {
+        grid-column: 1 / 3;
+      }
+
+      .btnForm {
+        grid-column: 1 / 3;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media-up(xl) {
+  .bookCarIntro {
+    bottom: 50px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.03);
+
+    &__form {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+      &__inputCon:first-child {
+        grid-column: 1 / 2;
+      }
+
+      .btnForm {
+        align-self: end;
+        grid-column: 3 / 4;
+        width: 100%;
+        height: 0%;
+      }
+    }
+  }
+}
