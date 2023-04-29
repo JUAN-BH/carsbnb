@@ -1,0 +1,36 @@
+.reviews {
+  width: 100%;
+  padding: 20px;
+  padding-top: 380px;
+  border-top: none;
+
+  article {
+    padding-bottom: 70px;
+  }
+
+  &__data {
+    // box-shadow: inset 0px -20px 20px 0px rgba(0, 0, 0, 0.05);
+
+    div {
+      margin-top: 20px;
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+
+      div {
+        margin-top: 0px;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@include media-up(lg) {
+  .reviews {
+    padding-top: 410px;
+
+    &__data {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

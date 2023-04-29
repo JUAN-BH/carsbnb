@@ -1,13 +1,16 @@
 .rentalSteps {
-  padding: 62px 20px;
+  padding: 62px 0px;
   text-align: center;
 
   &__intro {
+    padding: 0px 20px;
     h2 {
       font-size: $subTitle;
     }
     h1 {
-      font-size: $sectionsTitle;
+      // line-height: 50px;
+      margin-top: 16px;
+      font-size: $promotionTitleRes;
     }
   }
 
@@ -43,6 +46,14 @@
       p {
         color: $normalTxtColor;
       }
+    }
+  }
+}
+
+@include media-up(lg) {
+  .rentalSteps__intro {
+    h1 {
+      font-size: $sectionsTitle;
     }
   }
 }

@@ -6,8 +6,8 @@ import carBanner from './assets/banner_car.png';
 export default function Hero() {
   return (
     <div className="softW">
+      <img src={heroBg} alt="hero background" className="imgBg" />
       <section className="marginContainer hero">
-        <img src={heroBg} alt="hero background" className="hero__imgBg" />
         <HeroInfo />
         <div className="hero__carContainer">
           <div className="imgCon">

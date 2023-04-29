@@ -1,0 +1,91 @@
+.aboutCompany {
+  padding-top: 420px;
+  padding-inline: 20px;
+  padding-bottom: 50px;
+
+  &__imgIntro {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    &__data {
+      h2 {
+        margin-top: 26px;
+        font-size: $subTitle;
+      }
+      h1 {
+        margin: 10px 0px 30px 0px;
+        line-height: 40px;
+        font-size: $promotionTitleRes;
+      }
+      p {
+        color: $normalTxtColor;
+      }
+    }
+
+    &__stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #dbdbdb;
+      &__item {
+        img {
+          width: 60px;
+          height: 50px;
+          object-fit: contain;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          p:first-child {
+            font-size: 5rem;
+            font-weight: bold;
+          }
+          p:last-child {
+            margin-left: 6px;
+            line-height: 16px;
+            color: $normalTxtColor;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-up(lg) {
+  .aboutCompany {
+    display: flex;
+    column-gap: 40px;
+
+    &__imgIntro {
+      display: flex;
+      width: 40%;
+      padding: 0px;
+
+      img {
+        width: 100%;
+        margin: auto 0pc;
+      }
+    }
+
+    &__info {
+      width: 60%;
+
+      &__data {
+        h2 {
+          margin-top: 20px;
+        }
+        h1 {
+          line-height: 50px;
+          font-size: $sectionsTitle;
+        }
+      }
+    }
+  }
+}

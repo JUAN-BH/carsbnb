@@ -22,8 +22,7 @@
 
     &__appsBtn {
       display: flex;
-      justify-content: space-between;
-      width: 80%;
+      width: 100%;
       margin-top: 50px;
       &__appBtn {
         width: 150px;
@@ -31,6 +30,9 @@
         img {
           width: 100%;
         }
+      }
+      &__appBtn:last-child {
+        margin-left: 20px;
       }
     }
   }

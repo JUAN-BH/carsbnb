@@ -1,0 +1,97 @@
+.moreInfo {
+  padding-top: 380px;
+  padding-inline: 20px;
+  padding-bottom: 50px;
+
+  &__intro {
+    h1 {
+      font-size: $promotionTitleRes;
+    }
+
+    p {
+      margin: 20px 0px;
+    }
+
+    .link {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &__data {
+      margin: 20px 0;
+      color: $normalTxtColor;
+    }
+
+    &__contact {
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 40px;
+    label {
+      p {
+        margin: 30px 0px 8px 0px;
+        font-weight: 500;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        background-color: #f3f3f3;
+        border: none;
+      }
+      input:focus {
+        outline: none;
+      }
+      textarea {
+        width: 100%;
+        padding: 10px;
+        background-color: #f3f3f3;
+        border: none;
+      }
+      textarea:focus {
+        outline: none;
+      }
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}
+
+@include media-up(lg) {
+  .moreInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 420px;
+    padding-bottom: 30px;
+
+    &__intro {
+      width: 40%;
+      h1 {
+        font-size: $sectionsTitle;
+        line-height: 48px;
+      }
+    }
+
+    &__form {
+      width: 50%;
+      margin-top: 0px;
+      label {
+        p {
+          margin: 0px 0px 8px 0px;
+          font-weight: 500;
+        }
+      }
+      label:nth-child(2) {
+        display: block;
+        margin: 20px 0;
+      }
+    }
+  }
+}

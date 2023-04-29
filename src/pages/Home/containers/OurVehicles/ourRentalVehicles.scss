@@ -10,7 +10,7 @@
     }
     h1 {
       margin: 10px 0;
-      font-size: $sectionsTitle;
+      font-size: $promotionTitleRes;
     }
     p {
       max-width: 400px;
@@ -100,6 +100,11 @@
 @include media-up(lg) {
   .ourVehicles {
     padding: 70px 10px;
+    &__intro {
+      h1 {
+        font-size: $sectionsTitle;
+      }
+    }
     &__content {
       grid-template-columns: 280px 1fr 250px;
       &__vehicles {

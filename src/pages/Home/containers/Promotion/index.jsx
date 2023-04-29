@@ -1,5 +1,5 @@
 import React from 'react';
-import PrimaryBtn from '../PrimaryBtn';
+import PrimaryBtn from '../../../../global/PrimaryBtn';
 
 export default function Promotion() {
   return (

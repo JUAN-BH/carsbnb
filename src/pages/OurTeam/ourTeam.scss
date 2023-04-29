@@ -1,0 +1,37 @@
+.team {
+  display: grid;
+  grid-template-columns: 70%;
+  place-content: center;
+  width: 100%;
+  padding-top: 420px;
+  padding-inline: 20px;
+  padding-bottom: 40px;
+
+  &__item {
+    margin: 20px 0px;
+    box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.08);
+
+    img {
+      width: 100%;
+    }
+    &__info {
+      padding: 20px;
+      h3 {
+        font-size: $nameTitle;
+      }
+      p {
+        color: $normalTxtColor;
+      }
+    }
+  }
+}
+
+@include media-up(lg) {
+  .team {
+    grid-template-columns: repeat(3, 1fr);
+
+    &__item {
+      margin: 20px;
+    }
+  }
+}

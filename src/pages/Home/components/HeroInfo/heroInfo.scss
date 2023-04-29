@@ -54,13 +54,23 @@
 @include media-up(lg) {
   .hero__content {
     padding-top: 0px;
-    width: 42%;
+    width: 50%;
     text-align: left;
     &__info {
       width: auto;
     }
     &__btns {
       justify-content: flex-start;
+    }
+  }
+}
+
+@include media-up(xl) {
+  .hero__content {
+    &__info {
+      p {
+        width: 80%;
+      }
     }
   }
 }

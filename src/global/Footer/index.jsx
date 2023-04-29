@@ -1,10 +1,9 @@
 import { IconMailFilled, IconPhoneFilled } from '@tabler/icons-react';
-import React from 'react';
 
 export default function Footer() {
   return (
     <section className="footer marginContainer">
-      <atricle className="footer__info">
+      <article className="footer__info">
         <div className="footer__info__intro">
           <h2>
             CARS<span className="highlightTxt">BNB</span>
@@ -49,7 +48,7 @@ export default function Footer() {
             Submit
           </button>
         </div>
-      </atricle>
+      </article>
       <article className="rights">
         <p>
           ©2023 <span className="highlightTxt">Carsbnb</span>. All Rights

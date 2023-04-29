@@ -1,0 +1,60 @@
+.promoBg {
+  //   width: 100vw;
+  margin: 70px 0px 10px 0px;
+  background-color: $promotionBg;
+}
+
+.promotionG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  color: white;
+
+  h1 {
+    font-size: $promotionTitleRes;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    p {
+      display: flex;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: $subTitle;
+    }
+  }
+}
+
+@include media-up(xl) {
+  .promotionG {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    text-align: start;
+
+    h1 {
+      width: 50%;
+      font-size: $promotionTitleRes;
+    }
+
+    &__info {
+      margin-top: 0px;
+      p {
+        font-size: $subTitle;
+      }
+
+      h2 {
+        font-size: $heroGTitle;
+      }
+    }
+  }
+}
