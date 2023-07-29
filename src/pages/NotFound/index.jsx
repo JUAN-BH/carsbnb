@@ -1,9 +1,17 @@
-import React from 'react';
+import carImg from './assets/carImg.jpg';
 
 export default function NotFound() {
   return (
-    <div>
-      <h1>NotFound</h1>
-    </div>
+    <section className="marginContainer">
+      <article className="notFoundCon">
+        <figure className="notFoundCon__img">
+          <img src={carImg} alt="car lost" />
+        </figure>
+        <div className="notFoundCon__info">
+          <h1>Oops</h1>
+          <p>Page not found</p>
+        </div>
+      </article>
+    </section>
   );
 }

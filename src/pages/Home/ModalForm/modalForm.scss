@@ -1,0 +1,129 @@
+.modalBg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #3333;
+}
+.modal {
+  pointer-events: auto;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  &__intro {
+    &__titleCon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+
+      color: $whiteBg;
+      font-size: $modalTitle;
+      background-color: $primaryColor;
+
+      &__close {
+        cursor: pointer;
+      }
+    }
+    &__info {
+      padding: 20px;
+      background-color: $grayModalBg;
+      p:first-child {
+        display: flex;
+
+        margin-top: 0px;
+        color: $primaryColor;
+        font-weight: bold;
+        svg {
+          width: 44px;
+          height: 26px;
+          margin-right: 6px;
+        }
+      }
+
+      p {
+        margin-top: 10px;
+        color: $normalTxtColor;
+      }
+    }
+  }
+  &__summary {
+    padding: 20px;
+
+    &__info {
+      .sumTitle {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+      .infoTitle {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        svg {
+          color: $primaryColor;
+          margin-right: 6px;
+        }
+      }
+      ul {
+        list-style: none;
+      }
+
+      li {
+        margin: 20px 0px;
+      }
+    }
+
+    &__car {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  &__personalInfo {
+    padding: 20px;
+    h2 {
+      margin-bottom: 20px;
+      color: $primaryColor;
+      font-weight: bold;
+      font-size: $modalTitle;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .pInfo__inputCon {
+        input {
+          margin-top: 10px;
+          padding: 12px;
+          border: none;
+          border-radius: 4px;
+          background-color: #f3f3f3;
+        }
+        input:focus {
+          outline: none;
+          border: none;
+        }
+      }
+
+      .inputUpdates {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+      }
+
+      .btn--modal {
+        button {
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+}

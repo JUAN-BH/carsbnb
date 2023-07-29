@@ -4,8 +4,10 @@ import {
   IconCar,
   IconMapPinFilled,
 } from '@tabler/icons-react';
+import { useInitState } from '../../../../contexts/initContexts';
 
 export default function BookCarIntro() {
+  const initState = useInitState();
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
@@ -22,6 +24,8 @@ export default function BookCarIntro() {
       endDate,
     };
     console.log(dates);
+    console.log(initState);
+    initState.dispatch({ type: 'OPEN_MODAL' });
   };
 
   return (

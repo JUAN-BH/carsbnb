@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Hero from './containers/Hero';
 import BookCarIntro from './containers/BookCarIntro';
@@ -9,14 +9,27 @@ import ChooseUs from './containers/ChooseUs';
 import Testimonials from './containers/Testimonials';
 import FAQ from './containers/FAQ';
 import OurApp from './containers/OurApp';
+import ModalForm from './ModalForm';
+import { useInitState } from '../../contexts/initContexts';
 
 function Home() {
+  const { state } = useInitState();
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.style.overflow = state.modalBook ? 'hidden' : 'auto';
+
+    return () => {
+      body.style.overflow = 'auto';
+    };
+  }, [state.modalBook]);
+
   return (
     <>
       <Helmet>
         <title>Carsbnb</title>
       </Helmet>
       <Hero />
+      {state.modalBook && <ModalForm />}
       <BookCarIntro />
       <RentalSteps />
       <OurVehicles />
