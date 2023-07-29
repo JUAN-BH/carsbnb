@@ -86,7 +86,7 @@ export default function ModalForm() {
                 placeholder="Enter your first name"
               />
             </label>
-            <label htmlFor="lastName" className="pInfo__inputCon">
+            <label htmlFor="lastName" className="pInfo__inputCon lastNameInput">
               <p>
                 Last Name<span className="highlightTxt">*</span>
               </p>
@@ -114,7 +114,7 @@ export default function ModalForm() {
               </p>
               <input type="number" name="age" id="age" placeholder="18" />
             </label>
-            <label htmlFor="email" className="pInfo__inputCon">
+            <label htmlFor="email" className="pInfo__inputCon emailInput">
               <p>
                 Email<span className="highlightTxt">*</span>
               </p>
@@ -125,7 +125,7 @@ export default function ModalForm() {
                 placeholder="Enter your email address"
               />
             </label>
-            <label htmlFor="address" className="pInfo__inputCon">
+            <label htmlFor="address" className="pInfo__inputCon addressInput">
               <p>
                 Address<span className="highlightTxt">*</span>
               </p>
@@ -136,7 +136,7 @@ export default function ModalForm() {
                 placeholder="Enter your address"
               />
             </label>
-            <label htmlFor="city" className="pInfo__inputCon">
+            <label htmlFor="city" className="pInfo__inputCon cityInput">
               <p>
                 City<span className="highlightTxt">*</span>
               </p>
@@ -147,7 +147,7 @@ export default function ModalForm() {
                 placeholder="Enter your city"
               />
             </label>
-            <label htmlFor="zipCode" className="pInfo__inputCon">
+            <label htmlFor="zipCode" className="pInfo__inputCon zipCodeInput">
               <p>
                 Zip Code<span className="highlightTxt">*</span>
               </p>
@@ -158,11 +158,11 @@ export default function ModalForm() {
                 placeholder="Enter your zip code"
               />
             </label>
-            <label htmlFor="subscribe" className="pInfo__inputCon inputUpdates">
+            <label htmlFor="subscribe" className="inputUpdates subscribeInput">
               <input type="checkbox" name="subscribe" id="subscribe" />
               <p>Please send me latest news and updates</p>
             </label>
-            <div className="btn btn--modal">
+            <div className="btn btn--modal btnSubmit">
               <button type="submit" className="btn modalBtn">
                 Reserve Now
               </button>
