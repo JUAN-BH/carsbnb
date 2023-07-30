@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom';
 import { InitContextProvider } from './contexts/initContexts';
 import App from './App';
 import './main.scss';
+import { BookingContextProvider } from './contexts/BookingContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <InitContextProvider>
-        <App />
+        <BookingContextProvider>
+          <App />
+        </BookingContextProvider>
       </InitContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
