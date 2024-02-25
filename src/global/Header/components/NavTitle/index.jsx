@@ -5,7 +5,7 @@ export default function NavTitle() {
     <article className="navHeader__title">
       <img src={carbnbIcon} alt="carbnbIcon" loading="lazy" />
       <h1>
-        Cars<span className="highlightTxt">bnbTEST</span>
+        Cars<span className="highlightTxt">bnbTEST2</span>
       </h1>
     </article>
   );
